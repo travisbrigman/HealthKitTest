@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F07B18628694B6B00A15E94 /* MondayAt12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F07B18528694B6B00A15E94 /* MondayAt12.swift */; };
+		0F07B189286DAE0900A15E94 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F07B188286DAE0900A15E94 /* Summary.swift */; };
+		0F07B18B286E808A00A15E94 /* summariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F07B18A286E808A00A15E94 /* summariesView.swift */; };
 		0F0F7EE0286781BD0052EF85 /* HealthKitTest WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0F0F7EDF286781BD0052EF85 /* HealthKitTest WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0F0F7EE5286781BF0052EF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F7EE4286781BF0052EF85 /* Assets.xcassets */; };
 		0F0F7EEB286781BF0052EF85 /* HealthKitTest WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0F0F7EEA286781BF0052EF85 /* HealthKitTest WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -15,6 +18,8 @@
 		0F0F7EF4286781BF0052EF85 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F7EF3286781BF0052EF85 /* ComplicationController.swift */; };
 		0F0F7EF6286781C10052EF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F7EF5286781C10052EF85 /* Assets.xcassets */; };
 		0F0F7EF9286781C10052EF85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F7EF8286781C10052EF85 /* Preview Assets.xcassets */; };
+		0F0F7F09286781FB0052EF85 /* HealthKitQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F0F7F08286781FB0052EF85 /* HealthKitQuery.swift */; };
+		0F0F7F0D286788C70052EF85 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F7F0C286788C70052EF85 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0F07B18528694B6B00A15E94 /* MondayAt12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayAt12.swift; sourceTree = "<group>"; };
+		0F07B188286DAE0900A15E94 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		0F07B18A286E808A00A15E94 /* summariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = summariesView.swift; sourceTree = "<group>"; };
 		0F0F7EDB286781BC0052EF85 /* HealthKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0F7EDF286781BD0052EF85 /* HealthKitTest WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthKitTest WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0F7EE4286781BF0052EF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +78,9 @@
 		0F0F7EF5286781C10052EF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F0F7EF8286781C10052EF85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0F0F7EFA286781C10052EF85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0F7F08286781FB0052EF85 /* HealthKitQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitQuery.swift; sourceTree = "<group>"; };
+		0F0F7F0A286788C70052EF85 /* HealthKitTest WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HealthKitTest WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		0F0F7F0C286788C70052EF85 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,18 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0F7F0D286788C70052EF85 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F07B18428694B4D00A15E94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F07B18528694B6B00A15E94 /* MondayAt12.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F07B187286DADF000A15E94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0F07B188286DAE0900A15E94 /* Summary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0F0F7ED4286781BC0052EF85 = {
 			isa = PBXGroup;
 			children = (
 				0F0F7EE3286781BD0052EF85 /* HealthKitTest WatchKit App */,
 				0F0F7EEE286781BF0052EF85 /* HealthKitTest WatchKit Extension */,
 				0F0F7EDC286781BC0052EF85 /* Products */,
+				0F0F7F0B286788C70052EF85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,7 +142,12 @@
 		0F0F7EEE286781BF0052EF85 /* HealthKitTest WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0F07B187286DADF000A15E94 /* Models */,
+				0F07B18428694B4D00A15E94 /* Extensions */,
+				0F0F7F0A286788C70052EF85 /* HealthKitTest WatchKit Extension.entitlements */,
 				0F0F7EEF286781BF0052EF85 /* ContentView.swift */,
+				0F0F7F08286781FB0052EF85 /* HealthKitQuery.swift */,
+				0F07B18A286E808A00A15E94 /* summariesView.swift */,
 				0F0F7EF1286781BF0052EF85 /* HealthKitTestApp.swift */,
 				0F0F7EF3286781BF0052EF85 /* ComplicationController.swift */,
 				0F0F7EF5286781C10052EF85 /* Assets.xcassets */,
@@ -129,6 +163,14 @@
 				0F0F7EF8286781C10052EF85 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0F0F7F0B286788C70052EF85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F0F7F0C286788C70052EF85 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F07B18B286E808A00A15E94 /* summariesView.swift in Sources */,
+				0F07B18628694B6B00A15E94 /* MondayAt12.swift in Sources */,
 				0F0F7EF2286781BF0052EF85 /* HealthKitTestApp.swift in Sources */,
 				0F0F7EF0286781BF0052EF85 /* ContentView.swift in Sources */,
 				0F0F7EF4286781BF0052EF85 /* ComplicationController.swift in Sources */,
+				0F07B189286DAE0900A15E94 /* Summary.swift in Sources */,
+				0F0F7F09286781FB0052EF85 /* HealthKitQuery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,12 +376,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 8.4;
 			};
 			name = Debug;
 		};
@@ -383,12 +431,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.4;
 			};
 			name = Release;
 		};
@@ -396,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HealthKitTest WatchKit Extension/HealthKitTest WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitTest WatchKit Extension/Preview Content\"";
@@ -420,7 +471,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.4;
 			};
 			name = Debug;
 		};
@@ -428,6 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HealthKitTest WatchKit Extension/HealthKitTest WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HealthKitTest WatchKit Extension/Preview Content\"";
@@ -452,7 +504,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.4;
 			};
 			name = Release;
 		};
@@ -477,7 +529,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.4;
 			};
 			name = Debug;
 		};
@@ -502,7 +554,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+				WATCHOS_DEPLOYMENT_TARGET = 8.4;
 			};
 			name = Release;
 		};

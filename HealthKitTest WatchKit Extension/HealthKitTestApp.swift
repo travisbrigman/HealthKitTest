@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct HealthKitTestApp: App {
+    @StateObject var healthManager = HealthManager()
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
             }
+            .environmentObject(healthManager)
         }
     }
 }

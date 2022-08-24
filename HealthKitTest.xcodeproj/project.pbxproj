@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F07B18628694B6B00A15E94 /* MondayAt12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F07B18528694B6B00A15E94 /* MondayAt12.swift */; };
 		0F07B189286DAE0900A15E94 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F07B188286DAE0900A15E94 /* Summary.swift */; };
 		0F0F7EE0286781BD0052EF85 /* HealthKitTest WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0F0F7EDF286781BD0052EF85 /* HealthKitTest WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0F0F7EE5286781BF0052EF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F7EE4286781BF0052EF85 /* Assets.xcassets */; };
@@ -21,6 +20,9 @@
 		0F0F7F0D286788C70052EF85 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F7F0C286788C70052EF85 /* HealthKit.framework */; };
 		0F9D6E3D28961E1600032A60 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6E3C28961E1600032A60 /* ContentView-ViewModel.swift */; };
 		0F9D6E3F289BD2F100032A60 /* ActivityLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6E3E289BD2F100032A60 /* ActivityLevelView.swift */; };
+		0F9D6E4128A3C9E400032A60 /* FoxHappy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6E4028A3C9E400032A60 /* FoxHappy.swift */; };
+		0F9D6E4428A5F43100032A60 /* UIBezierPath+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6E4228A5F43000032A60 /* UIBezierPath+Extension.swift */; };
+		0F9D6E4528A5F43100032A60 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9D6E4328A5F43100032A60 /* UIColor+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F07B18528694B6B00A15E94 /* MondayAt12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayAt12.swift; sourceTree = "<group>"; };
 		0F07B188286DAE0900A15E94 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		0F0F7EDB286781BC0052EF85 /* HealthKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0F7EDF286781BD0052EF85 /* HealthKitTest WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthKitTest WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +84,9 @@
 		0F0F7F0C286788C70052EF85 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		0F9D6E3C28961E1600032A60 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		0F9D6E3E289BD2F100032A60 /* ActivityLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLevelView.swift; sourceTree = "<group>"; };
+		0F9D6E4028A3C9E400032A60 /* FoxHappy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoxHappy.swift; sourceTree = "<group>"; };
+		0F9D6E4228A5F43000032A60 /* UIBezierPath+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Extension.swift"; sourceTree = "<group>"; };
+		0F9D6E4328A5F43100032A60 /* UIColor+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +104,8 @@
 		0F07B18428694B4D00A15E94 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0F07B18528694B6B00A15E94 /* MondayAt12.swift */,
+				0F9D6E4228A5F43000032A60 /* UIBezierPath+Extension.swift */,
+				0F9D6E4328A5F43100032A60 /* UIColor+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				0F07B18428694B4D00A15E94 /* Extensions */,
 				0F0F7F0A286788C70052EF85 /* HealthKitTest WatchKit Extension.entitlements */,
 				0F0F7EEF286781BF0052EF85 /* ContentView.swift */,
+				0F9D6E4028A3C9E400032A60 /* FoxHappy.swift */,
 				0F9D6E3E289BD2F100032A60 /* ActivityLevelView.swift */,
 				0F9D6E3C28961E1600032A60 /* ContentView-ViewModel.swift */,
 				0F0F7F08286781FB0052EF85 /* HealthKitQuery.swift */,
@@ -303,12 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F07B18628694B6B00A15E94 /* MondayAt12.swift in Sources */,
+				0F9D6E4428A5F43100032A60 /* UIBezierPath+Extension.swift in Sources */,
 				0F0F7EF2286781BF0052EF85 /* HealthKitTestApp.swift in Sources */,
 				0F0F7EF0286781BF0052EF85 /* ContentView.swift in Sources */,
 				0F0F7EF4286781BF0052EF85 /* ComplicationController.swift in Sources */,
 				0F9D6E3D28961E1600032A60 /* ContentView-ViewModel.swift in Sources */,
+				0F9D6E4128A3C9E400032A60 /* FoxHappy.swift in Sources */,
 				0F07B189286DAE0900A15E94 /* Summary.swift in Sources */,
+				0F9D6E4528A5F43100032A60 /* UIColor+extension.swift in Sources */,
 				0F9D6E3F289BD2F100032A60 /* ActivityLevelView.swift in Sources */,
 				0F0F7F09286781FB0052EF85 /* HealthKitQuery.swift in Sources */,
 			);

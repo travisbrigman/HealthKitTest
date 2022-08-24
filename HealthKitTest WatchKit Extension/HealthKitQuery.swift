@@ -49,6 +49,7 @@ class HealthManager: NSObject, ObservableObject {
                     let energyBurnedGoal = summary.activeEnergyBurnedGoal.doubleValue(for: self.energyUnit)
                     let standGoal = summary.appleStandHoursGoal.doubleValue(for: self.standUnit)
                     let movementGoal = summary.appleExerciseTimeGoal.doubleValue(for: self.exerciseUnit)
+
                     print(energyBurnedGoal, standGoal, movementGoal)
 
                     DispatchQueue.main.async {

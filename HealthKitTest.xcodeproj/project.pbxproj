@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F07B189286DAE0900A15E94 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F07B188286DAE0900A15E94 /* Summary.swift */; };
 		0F0F7EE0286781BD0052EF85 /* HealthKitTest WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0F0F7EDF286781BD0052EF85 /* HealthKitTest WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0F0F7EE5286781BF0052EF85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F0F7EE4286781BF0052EF85 /* Assets.xcassets */; };
 		0F0F7EEB286781BF0052EF85 /* HealthKitTest WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0F0F7EEA286781BF0052EF85 /* HealthKitTest WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -68,7 +67,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F07B188286DAE0900A15E94 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
 		0F0F7EDB286781BC0052EF85 /* HealthKitTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthKitTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0F7EDF286781BD0052EF85 /* HealthKitTest WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HealthKitTest WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F0F7EE4286781BF0052EF85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		0F07B187286DADF000A15E94 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0F07B188286DAE0900A15E94 /* Summary.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,7 +312,6 @@
 				0F0F7EF4286781BF0052EF85 /* ComplicationController.swift in Sources */,
 				0F9D6E3D28961E1600032A60 /* ContentView-ViewModel.swift in Sources */,
 				0F9D6E4128A3C9E400032A60 /* FoxHappy.swift in Sources */,
-				0F07B189286DAE0900A15E94 /* Summary.swift in Sources */,
 				0F9D6E4528A5F43100032A60 /* UIColor+extension.swift in Sources */,
 				0F9D6E3F289BD2F100032A60 /* ActivityLevelView.swift in Sources */,
 				0F0F7F09286781FB0052EF85 /* HealthKitQuery.swift in Sources */,

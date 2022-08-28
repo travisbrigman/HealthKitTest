@@ -25,7 +25,11 @@ struct ContentView: View {
     let armColor2 = UIColor.fromHexString("#FFA143")
     let rightArmcolor1 = UIColor.fromHexString("#F88F1C")
     let rightArmColor2 = UIColor.fromHexString("#FFA143")
-    let pathBounds = UIBezierPath.calculateBounds(paths: [.tailComponent1, .tailComponent2, .tailComponent3,.tailComponent4, .bodyComponent1, .bodyComponent2, .bodyComponent3, .feetComponent1, .feetComponent2, .feetComponent3 ,.leftArmComponent1,.leftArmComponent2, .rightArmComponent1, .rightArmComponent2])
+
+    func colorFromHex(hexString: String) -> UIColor {
+        return UIColor.fromHexString(hexString)
+    }
+    let pathBounds = UIBezierPath.calculateBounds(paths: [.tailComponent1, .tailComponent2, .tailComponent3,.tailComponent4, .bodyComponent1, .bodyComponent2, .bodyComponent3, .feetComponent1, .feetComponent2, .feetComponent3 ,.leftArmComponent1,.leftArmComponent2, .rightArmComponent1, .rightArmComponent2, .faceComponent1, .faceComponent2, .faceComponent3, .faceComponent4, .faceComponent5, .faceComponent7, .faceComponent8, .faceComponent9, .faceComponent10, .faceComponent11, .faceComponent12,.eyesComponent1, .eyesComponent2, .faceComponent3, .eyesComponent4, .eyesComponent5, .eyesComponent6, .faceComponent7, .eyesComponent8, .eyesComponent9, .eyesComponent10, .noseComponent1, .noseComponent2, .mouthComponent1, .mouthComponent2])
     var body: some View {
 //        let cumulativeActivityScore = viewModel.totalActivity(with: healthManager)
         let mockActivity = viewModel.mockTotalActivity()
@@ -60,6 +64,46 @@ struct ContentView: View {
                 FoxHappy(bezier: .rightArmComponent1, pathBounds: pathBounds).fill(Color(rightArmcolor1))
                 FoxHappy(bezier: .rightArmComponent2, pathBounds: pathBounds).fill(Color(rightArmColor2))
             }
+            Group {
+                FoxHappy(bezier: .faceComponent1, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#000000"))).opacity(0.11)
+                FoxHappy(bezier: .faceComponent2, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#FB8B00")))
+                FoxHappy(bezier: .faceComponent3, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#FED9BE")))
+                FoxHappy(bezier: .faceComponent4, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#EE7900")))
+                FoxHappy(bezier: .faceComponent5, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#FB8B00")))
+                FoxHappy(bezier: .faceComponent6, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#FED9BE")))
+                FoxHappy(bezier: .faceComponent7, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#EE7900")))
+                FoxHappy(bezier: .faceComponent8, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#ED7E11")))
+                FoxHappy(bezier: .faceComponent9, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#ED7E11")))
+
+                Group {
+                    FoxHappy(bezier: .faceComponent10, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#FC9229")))
+                    FoxHappy(bezier: .faceComponent11, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#FED9BE")))
+                    FoxHappy(bezier: .faceComponent12, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#F7CCB0")))
+                }
+            }
+            Group {
+                FoxHappy(bezier: .eyesComponent1, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#ffffff")))
+                FoxHappy(bezier: .eyesComponent2, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#F2F2F2")))
+                FoxHappy(bezier: .eyesComponent3, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#ffffff")))
+                FoxHappy(bezier: .eyesComponent4, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#F2F2F2")))
+                FoxHappy(bezier: .eyesComponent5, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#663612")))
+                FoxHappy(bezier: .eyesComponent6, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#753C15")))
+                FoxHappy(bezier: .eyesComponent7, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#663612")))
+                FoxHappy(bezier: .eyesComponent8, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#753C15")))
+                FoxHappy(bezier: .eyesComponent9, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#4D2116")))
+                FoxHappy(bezier: .eyesComponent10, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#4D2116")))
+            }
+
+            Group {
+                FoxHappy(bezier: .noseComponent1, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#663612")))
+                FoxHappy(bezier: .noseComponent2, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#753C15")))
+            }
+
+            Group {
+                FoxHappy(bezier: .mouthComponent1, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#663612")))
+                FoxHappy(bezier: .mouthComponent2, pathBounds: pathBounds).fill(Color(colorFromHex(hexString: "#DD686E")))
+            }
+            
 
         }
         /*

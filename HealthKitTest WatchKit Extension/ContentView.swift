@@ -43,7 +43,9 @@ struct ContentView: View {
             FoxHappy(bezier: .tailComponent2, pathBounds: pathBounds).fill(Color(tailColor2))
             FoxHappy(bezier: .tailComponent3, pathBounds: pathBounds).fill(Color(tailColor3))
             FoxHappy(bezier: .tailComponent4, pathBounds: pathBounds).fill(Color(tailColor4))
-            }
+            }.rotationEffect(.degrees(viewModel.characterWiggles ? 0 :5.5))
+                .animation(Animation.easeInOut(duration: 0.25).repeatForever(autoreverses: true), value: viewModel.characterWiggles)
+                .onAppear { viewModel.characterWiggles.toggle() }
             
             Group {
             FoxHappy(bezier: .bodyComponent1, pathBounds: pathBounds).fill(Color(bodyColor1))

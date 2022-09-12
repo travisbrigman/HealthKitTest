@@ -195,6 +195,9 @@
 				0F0F7EE2286781BD0052EF85 /* PBXTargetDependency */,
 			);
 			name = HealthKitTest;
+			packageProductDependencies = (
+				0F99815528CEBA1B00B108FD /* RiveRuntime */,
+			);
 			productName = HealthKitTest;
 			productReference = 0F0F7EDB286781BC0052EF85 /* HealthKitTest.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
@@ -263,6 +266,9 @@
 				Base,
 			);
 			mainGroup = 0F0F7ED4286781BC0052EF85;
+			packageReferences = (
+				0F99815428CEBA1B00B108FD /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 0F0F7EDC286781BC0052EF85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -632,6 +638,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F99815428CEBA1B00B108FD /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F99815528CEBA1B00B108FD /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F99815428CEBA1B00B108FD /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F0F7ED5286781BC0052EF85 /* Project object */;
 }
